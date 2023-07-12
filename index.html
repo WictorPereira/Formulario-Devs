@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Devs</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <fieldset class="caixa">
+            <form action="#" get autocomplete="on">
+                <header class="cabeça">
+                    <h1>Cadastro de Devs</h1>
+                    <p id="pcabeça">Insira suas informações</p>
+                </header>
+
+                <div class="main">
+
+                    <label id="nome" for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" placeholder=" Nome" required>
+                    <label id="sobrenome" for="isobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder=" Sobrenome" required>
+
+                    <label id="email" for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" placeholder=" Digite seu E-mail" required>
+
+
+                    <p>Qual area voce desenvolve?</p>
+                    <div class="area">
+                        <input type="checkbox" name="front" id="ifront">
+                        <label for="ifront">Front-end</label>
+                        <input type="checkbox" name="back" id="iback">
+                        <label for="iback">Back-end</label>
+                        <input type="checkbox" name="full" id="ifull">
+                        <label for="ifull">FullStack</label>
+                    </div>
+                    <p>Senioridade</p>
+                    <select id="senioridade" name="senioridade">
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    <p>Quais linguagens que utiliza:</p>
+                    <label for="ihtml">HTML</label>
+                    <input type="checkbox" name="html" id="ihtml">
+                    <label for="icss">CSS</label>
+                    <input type="checkbox" name="css" id="icss">
+                    <label for="ijs">JavaScript</label>
+                    <input type="checkbox" name="js" id="ijs">
+                    <label for="iphp">PHP</label>
+                    <input type="checkbox" name="php" id="iphp">
+                    <label for="ic#">C#</label>
+                    <input type="checkbox" name="c#" id="ic#">
+                    <label for="ijava">JAVA</label>
+                    <input type="checkbox" name="java" id="ijava">
+                    <p>Fale um pouco sobre sua experiência:</p>
+
+                    <div class="experiencia"><textarea name="area" id="iarea" cols="20" rows="10"
+                            placeholder="Escreva aqui!"></textarea></div>
+                    <div id="botao"><input class="concluido" type="submit" value="Concluído"></div>
+
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
